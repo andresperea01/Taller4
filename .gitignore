@@ -1,0 +1,13 @@
+# Dependency directories
+**/node_modules/
+
+# Build and test artifacts
+**/dist/
+**/coverage/
+**/.angular/
+**/.astro/
+**/documentation/
+
+# Local system and editor files
+.DS_Store
+.vscode/
