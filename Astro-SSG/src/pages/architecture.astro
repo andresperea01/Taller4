@@ -1,0 +1,18 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+
+const steps = [
+  'Durante el build, Astro genera un documento HTML para cada ruta.',
+  'El servidor o CDN entrega el HTML ya construido al navegador.',
+  'El navegador puede mostrar el contenido sin descargar JavaScript para estas vistas.',
+];
+---
+
+<MainLayout>
+  <h1>Arquitectura SSG</h1>
+  <p class="lead">Astro genera la interfaz durante el build y entrega HTML listo para mostrar.</p>
+
+  <ol class="list-group list-group-numbered">
+    {steps.map((step) => <li class="list-group-item">{step}</li>)}
+  </ol>
+</MainLayout>

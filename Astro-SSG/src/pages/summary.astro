@@ -1,0 +1,18 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+
+const features = [
+  'Navegación mediante documentos HTML estáticos.',
+  'Contenido generado durante el proceso de build.',
+  'Entrega de HTML listo para mostrar en el navegador.',
+];
+---
+
+<MainLayout>
+  <h1>Resumen de la aplicación</h1>
+  <p class="lead">Esta vista presenta las capacidades principales del sitio estático construido con Astro.</p>
+
+  <ul class="list-group">
+    {features.map((feature) => <li class="list-group-item">{feature}</li>)}
+  </ul>
+</MainLayout>
