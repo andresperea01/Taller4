@@ -1,6 +1,9 @@
 import { Routes } from '@angular/router';
 import { DatePage } from './pages/date/date.page';
+import { ArchitecturePage } from './pages/architecture/architecture.page';
+import { MetricsPage } from './pages/metrics/metrics.page';
 import { ProductsPage } from './pages/products/products.page';
+import { SummaryPage } from './pages/summary/summary.page';
 import { UsersPage } from './pages/users/users.page';
 
 /**
@@ -46,6 +49,15 @@ export const routes: Routes = [
    * de mostrar la fecha actual del sistema.
    */
   { path: 'date', component: DatePage },
+
+  /** Vista de resumen de las capacidades de la aplicación. */
+  { path: 'summary', component: SummaryPage },
+
+  /** Vista con métricas que ayudan a comparar los builds. */
+  { path: 'metrics', component: MetricsPage },
+
+  /** Vista que explica el flujo de una SPA. */
+  { path: 'architecture', component: ArchitecturePage },
 
   /**
    * Ruta comodín.

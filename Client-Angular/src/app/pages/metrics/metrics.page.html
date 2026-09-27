@@ -1,0 +1,13 @@
+<h1>Métricas de comparación</h1>
+<p class="lead">Estas métricas permiten analizar el comportamiento de una SPA y un sitio SSG.</p>
+
+<table class="table table-striped border">
+  <thead>
+    <tr><th>Métrica</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    @for (metric of metrics; track metric.name) {
+      <tr><td>{{ metric.name }}</td><td>{{ metric.description }}</td></tr>
+    }
+  </tbody>
+</table>
